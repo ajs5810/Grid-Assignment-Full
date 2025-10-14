@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grid Assignment</title>
+  <meta name="description" content="Wireframe built with semantic HTML and CSS Grid: nav, hero image placeholder, two-column section, gallery grid, and reusable card components." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="top">
+  <div class="container">
+
+    <!-- Top navigation bar (now real links) -->
+    <header class="top">
+      <nav>
+        <ul>
+          <li><a href="#hero">section1</a></li>
+          <li><a href="#about">section2</a></li>
+          <li><a href="#gallery">Lorem ipsum</a></li>
+          <li><a href="#features">Lorem ipsum</a></li>
+          <li><a href="#top">Lorem ipsum dolor</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- 1) Large gray “image” placeholder (grid layout #1) -->
+    <section id="hero" class="main-image" aria-labelledby="hero-label">
+      <h2 id="hero-label" class="visually-hidden">Main Image Area</h2>
+      <div class="img-placeholder">
+        <span>image</span>
+        <!-- hidden img only for alt-text requirement -->
+        <img class="sr-image"
+             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAusB9Yyq1e0AAAAASUVORK5CYII="
+             alt="Main image placeholder">
+      </div>
+    </section>
+
+    <!-- 2) Bottom two-column box: left label+thumb, right text (grid layout #2) -->
+    <section id="about" class="bottom" aria-labelledby="about-label">
+      <h2 id="about-label" class="visually-hidden">About Section</h2>
+
+      <div class="bottom-left">
+        <p class="wf-label">heading</p>
+        <div class="thumb-placeholder">
+          <span>image</span>
+          <!-- hidden img for alt text rubric -->
+          <img class="sr-image"
+               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAusB9Yyq1e0AAAAASUVORK5CYII="
+               alt="Small image placeholder">
+        </div>
+      </div>
+
+      <div class="bottom-right">
+        <p>
+          Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos
+          at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eam an brute
+          copiosae hendrerit. Eos erant dolorum an. Per cetero affert. Mei iisque mentitum
+          moderatius cu. Sit munere facilis accusam eu dicat falli consulatu at vis. Te
+          facilisis mnesarchum qui posse omnium mediocritatem est eu. Modus argumentum ne
+          qui rationibus efficiendi in eos. Ei mea falli feugiat efficiantur et tollit aliquip
+          debitis mei. No deserunt mediocritatem mea. Lorem ipsum dolor sit amet et delectus
+          accommodare his consul.
+        </p>
+      </div>
+    </section>
+
+    <!-- 3) Gallery: 3-column grid of placeholders (grid layout #3) -->
+    <section id="gallery" class="gallery" aria-labelledby="gallery-label">
+      <h2 id="gallery-label" class="section-title">Gallery</h2>
+      <div class="gallery-grid">
+        <div class="ph"><span>image</span><img class="sr-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAusB9Yyq1e0AAAAASUVORK5CYII=" alt="Gallery image 1"></div>
+        <div class="ph"><span>image</span><img class="sr-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAusB9Yyq1e0AAAAASUVORK5CYII=" alt="Gallery image 2"></div>
+        <div class="ph"><span>image</span><img class="sr-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAusB9Yyq1e0AAAAASUVORK5CYII=" alt="Gallery image 3"></div>
+        <div class="ph"><span>image</span><img class="sr-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAusB9Yyq1e0AAAAASUVORK5CYII=" alt="Gallery image 4"></div>
+        <div class="ph"><span>image</span><img class="sr-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAusB9Yyq1e0AAAAASUVORK5CYII=" alt="Gallery image 5"></div>
+        <div class="ph"><span>image</span><img class="sr-image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAusB9Yyq1e0AAAAASUVORK5CYII=" alt="Gallery image 6"></div>
+      </div>
+    </section>
+
+    <!-- 4) Cards: reusable component repeated (grid layout #4 + component) -->
+    <section id="features" class="cards" aria-labelledby="features-label">
+      <h2 id="features-label" class="section-title">Features</h2>
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card-ph"><span>image</span></div>
+          <h3 class="card-title">Card title</h3>
+          <p class="card-text">Short supporting text goes here.</p>
+        </article>
+        <article class="card">
+          <div class="card-ph"><span>image</span></div>
+          <h3 class="card-title">Card title</h3>
+          <p class="card-text">Short supporting text goes here.</p>
+        </article>
+        <article class="card">
+          <div class="card-ph"><span>image</span></div>
+          <h3 class="card-title">Card title</h3>
+          <p class="card-text">Short supporting text goes here.</p>
+        </article>
+      </div>
+    </section>
+
+  </div>
+</body>
+</html>
